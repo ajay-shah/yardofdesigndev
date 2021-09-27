@@ -10,42 +10,70 @@
 
     <title>Yard of Design</title>
 	<style>
+		body, html {
+			background-color: #fed403;
+		}
 		@font-face {
 			font-family: my-font;
 			src: url("/Users/ajayshah/Downloads/futura/Futura Extra Black font.ttf");
+		}
+		.nav-item {
+			font-family: my-font;
 		}
 		.highlights {
 			font-family: my-font;
 			background-color: #db8b02;
 			color: white !important;
+			border: none !important;
+		}
+		.circle {
+			position: relative;
+			width: 30%;
+			padding-bottom: 30%;
+			background: white;
+			border-radius: 50%;
+		}
+		.loading {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			margin: 0;
 		}
 		
 	</style>
   </head>
   <body>
 	<div class="container-fluid">
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand highlights border rounded-pill p-2" href="#">CONNECTING CREATORS.</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">HOME</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">ABOUT US</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">BLOG</a>
-        </li>
-      </ul>
-			<a class="navbar-brand highlights border rounded-pill p-2" href="#">CONNECT</a>
-    </div>
-  </div>
-</nav>
+		<nav class="navbar navbar-expand-lg navbar-light">
+		  <div class="container-fluid">
+			<a class="navbar-brand highlights border rounded-pill p-2" href="#">CONNECTING CREATORS.</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+				  <a class="nav-link" aria-current="page" href="#">HOME</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#">ABOUT US</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" aria-current="page" href="#">BLOG</a>
+				</li>
+			  </ul>
+					<a class="navbar-brand highlights border rounded-pill p-2" href="#">CONNECT</a>
+			</div>
+		  </div>
+		</nav>
+		<div class="row d-flex justify-content-center">
+			<div class="circle d-flex justify-content-center align-items-center">
+					<h1 class="loading display-1 one">Y</h1>
+					<h1 class="loading display-1 two">O</h1>
+					<h1 class="loading display-1 three">D</h1>
+			</div>
+		</div>
 	</div>
     <!-- Optional JavaScript; choose one of the two! -->
 
