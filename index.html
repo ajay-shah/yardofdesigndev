@@ -12,14 +12,39 @@
 	<style>
 		body, html {
 			background-color: #fed403;
+			margin: 0;
+			height: 100%;
 		}
 		@font-face {
 			font-family: my-font;
 			src: url("/Users/ajayshah/Downloads/futura/Futura Extra Black font.ttf");
 		}
 		@font-face {
+			font-family: book-font;
+			src: url("/Users/ajayshah/Downloads/futura/Futura Book font.ttf");
+		}
+		@font-face {
 			font-family: my-font-simple;
 			src: url("/Users/ajayshah/Downloads/futura/unicode.futurab.ttf");
+		}
+		@font-face {
+			font-family: light-font;
+			src: url("/Users/ajayshah/Downloads/futura/futura light bt.ttf");
+		}
+		.bold-text {
+			font-family: my-font;
+			font-size: 8vw;
+			color: white;
+		}
+		.text-book {
+			font-family: book-font;
+			font-size: 9vw;
+			color: #656d70;
+		}
+		.text-light {
+			font-family: light-font;
+			color: #656d70 !important;
+			font-size: 25px;
 		}
 		.nav-item {
 			font-family: my-font;
@@ -30,98 +55,74 @@
 			color: white !important;
 			border: none !important;
 		}
-		.headings {
-			font-family: my-font;
-			color: white;
-		}
+
 		.card {
 			background-color: #FFFDD0;
 			color: rgba(101, 109, 112, 1);
 			border-radius: 20px;
 			font-family: my-font-simple;
 		}
-		.circle {
-			width: 30vw;
-			height: 30vw;
-			border-radius: 50%;
-			background: white;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			box-shadow: 5px 5px rgba(101, 109, 112, 1);
+		.first-section {
+			position: relative;
 		}
-		.loading {
-				animation-duration: 6s;
-				animation-iteration-count: infinite;
-			}
-			.one {
-				animation-name: spinone;
-				animation-timing-function: linear;
-			}
-			.two {
-				animation-name: spintwo;
-				animation-timing-function: linear;
-			}
-			.three {
-				animation-name: spinthree;
-				animation-timing-function: linear;
-			}
-		@keyframes spinone {
-        0% {
-            transform: rotateY(0deg);
-        }
-        30% {
-            transform: rotateY(360deg);
-        }
-        66% {
-            transform: rotateY(360deg);
-        }
-        100% {
-            transform: rotateY(360deg);
-        }
-    }
-		@keyframes spintwo {
-        0% {
-            transform: rotateY(0deg);
-        }
-        30% {
-            transform: rotateY(0deg);
-        }
-        60% {
-            transform: rotateY(360deg);
-        }
-        100% {
-            transform: rotateY(360deg);
-        }
-    }
-		@keyframes spinthree {
-        0% {
-            transform: rotateY(0deg);
-        }
-        30% {
-            transform: rotateY(0deg);
-        }
-        60% {
-            transform: rotateY(0deg);
-        }
-        100% {
-            transform: rotateY(360deg);
-        }
-    }
-
+		.headings { 
+			font-family: my-font;
+			position: absolute !important;
+			bottom: 0px !important;
+			color: white;
+			text-align: center;
+			width: 100%;
+		}
+		.second-section {
+			position: relative;
+		}
+		.card {
+			position: absolute !important;
+			top: 20px !important;
+			left: 0 auto !important;
+		}
+		.second-section-text {
+			position: absolute !important;
+			top: 30% !important;
+			width: 25%;
+			font-family: my-font;
+			color: white;
+		}
+		.third-section {
+			position:relative;
+		}
+		.fourth-section{
+			position: relative;
+		}
+		.top-left {
+			position: absolute;
+			top: 8px;
+		}
+		#circle-img {
+			display: block;
+			max-width: 40%;
+			height: auto;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#mobile-app {
+			max-width: 20%;
+			margin-left: auto;
+			margin-right: auto;
+		}
 		
 	</style>
   </head>
   <body>
 	<div class="container-fluid">
-		<nav class="navbar navbar-expand-lg navbar-light border-bottom border-dark border-5 pb-0 mb-0">
+		<nav class="navbar navbar-expand-lg navbar-light">
 		  <div class="container-fluid">
 			<a class="navbar-brand highlights border rounded-pill p-2" href="#">CONNECTING CREATORS.</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			  <span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+			  <ul class="navbar-nav ms-auto mb-lg-0">
 				<li class="nav-item">
 				  <a class="nav-link" aria-current="page" href="#">HOME</a>
 				</li>
@@ -136,21 +137,59 @@
 			</div>
 		  </div>
 		</nav>
-		<div class="row mt-5 d-flex justify-content-center">
-			<div class="circle d-flex align-items-center justify-content-center">
-					<h1 class="loading display-1 one">Y</h1>
-					<h1 class="loading display-1 two">O</h1>
-					<h1 class="loading display-1 three">D</h1>
+		<div class="first-section">
+				<img src="/Users/ajayshah/Downloads/rsz_imageonline-co-overlayed-image11.png" class="img-fluid"/>
+				<div class="row d-flex justify-content-center">
+					<h1 class="display-1 headings">Yard of Design</h1>
+				</div>
+		</div>
+		<div class="second-section">
+				<img src="/Users/ajayshah/Downloads/2.png" class="img-fluid" />
+					<div class="d-flex justify-content-center">
+							 <div class="card" style="width: 90%;">
+								<div class="card-body p-1 m-0" style="font-size:2.5vw;">
+									Multipurpose online platform for Architects and Architecture based communities to discuss, debate, share knowledge and opportunities across the country.
+								</div>
+							</div>
+					</div>
+					<div class="second-section-text text-book" style="font-size:7vw;">
+						Connect like never before.
+					</div>
+		</div>
+		<div class="third-section mt-1">
+			<img src="/Users/ajayshah/Downloads/3(1)(1).png" class="img-fluid" />
+		</div>
+		<div class="fourth-section">
+			<img src="/Users/ajayshah/Downloads/5(1).png" id="circle-img" />
+			<div class="top-left">
+				<div class="row bold-text" style="letter-spacing:10px;">
+						Networking
+				</div>
+				<div class="row bold-text" style="letter-spacing:10px;">
+						is now seamless.
+				</div>
+				<div class="row">
+					<img src="/Users/ajayshah/Downloads/4(1).png" />
+				</div>
 			</div>
 		</div>
-		<div class="row mt-5 d-flex text-center">
-			<h1 class="display-1 headings">Yard of Design</h1>
+		<div class="fifth-section d-flex flex-column mt-5">
+			<div class="d-flex justify-content-center">
+					<h1 class="bold-text">App</h1>
+			</div>
+			<div class="d-flex justify-content-center">
+					<h1 class="bold-text">Coming Soon</h1>
+			</div>
+			<div class="d-flex justify-content-center" id="mobile-app">
+					<img src="/Users/ajayshah/Downloads/Untitled-2(1).png" class="img-fluid" />
+			</div>
 		</div>
-		<div class="row d-flex justify-content-center">
-			<div class="card" style="width: 90%;">
-				<div class="card-body fs-4">
-					Multipurpose online platform for Architects and Architecture based communities to discuss, debate, share knowledge and opportunities across the country.
-				</div>
+		<div class="sixth-section d-flex flex-column">
+			<div class="d-flex justify-content-center mt-5">
+					<h1 class="text-book">LET'S KEEP IN TOUCH.</h1>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+					<p class="text-light">Subscribe to our newsletter and keep yourself updated with all the updates of YOD.</p>
 			</div>
 		</div>
 	</div>
