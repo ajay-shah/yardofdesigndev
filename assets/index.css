@@ -1,0 +1,133 @@
+		body, html {
+			background-color: #fed403;
+			margin: 0;
+			height: 100%;
+		}
+		@font-face {
+			font-family: my-font;
+			src: url("/Users/ajayshah/Downloads/futura/Futura Extra Black font.ttf");
+		}
+		@font-face {
+			font-family: book-font;
+			src: url("/Users/ajayshah/Downloads/futura/Futura Book font.ttf");
+		}
+		@font-face {
+			font-family: my-font-simple;
+			src: url("/Users/ajayshah/Downloads/futura/unicode.futurab.ttf");
+		}
+		@font-face {
+			font-family: light-font;
+			src: url("/Users/ajayshah/Downloads/futura/futura light bt.ttf");
+		}
+		.bold-text {
+			font-family: my-font;
+			font-size: 8vw;
+			color: white;
+		}
+		.text-book {
+			font-family: book-font;
+			font-size: 9vw;
+			color: #656d70;
+		}
+		.text-light {
+			font-family: light-font;
+			color: #656d70 !important;
+			font-size: 25px;
+		}
+		.nav-item {
+			font-family: my-font;
+		}
+		.highlights {
+			font-family: my-font;
+			background-color: #db8b02;
+			color: white !important;
+			border: none !important;
+		}
+
+		.card {
+			background-color: #FFFDD0;
+			color: rgba(101, 109, 112, 1);
+			border-radius: 20px;
+			font-family: my-font-simple;
+		}
+		.first-section {
+			position: relative;
+		}
+		#social-media-icons {
+			position: absolute !important;
+			right: 1% !important;
+			top: 10% !important;
+			border: 1px solid white;
+			border-radius: 25px;
+			background: white;
+			box-shadow: 2px 2px;
+			padding: 2px;
+			z-index: 100;
+		}
+		@media only screen and (max-width: 750px) {
+		  #social-media-icons {
+			top: 0% !important;
+		  }
+		}
+		.icons {
+			height: 30px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		@media only screen and (max-width: 600px) {
+		  .icons {
+			margin-top: -1px;
+			height: 20px;
+		  }
+		}
+		.headings { 
+			font-family: my-font;
+			position: absolute !important;
+			bottom: 0px !important;
+			color: white;
+			text-align: center;
+			width: 100%;
+		}
+		.second-section {
+			position: relative;
+		}
+		.card {
+			position: absolute !important;
+			top: 20px !important;
+			left: 0 auto !important;
+		}
+		.second-section-text {
+			position: absolute !important;
+			top: 30% !important;
+			width: 25%;
+			font-family: my-font;
+			color: white;
+		}
+		.third-section{
+			position: relative;
+		}
+		.fourth-section{
+			position: relative;
+		}
+		.top-left {
+			position: absolute;
+			top: 8px;
+		}
+		@media only screen and (max-width: 540px) {
+		  .fifth-section {
+			margin-top: 80px !important;
+		  }
+		}
+		#circle-img {
+			display: block;
+			max-width: 40%;
+			height: auto;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#mobile-app {
+			max-width: 20%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
