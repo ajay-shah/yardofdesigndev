@@ -64,7 +64,7 @@
 			padding: 2px;
 			z-index: 100;
 		}
-		@media only screen and (max-width: 750px) {
+		@media only screen and (max-width: 925px) {
 		  #social-media-icons {
 			display: flex !important;
 			flex-direction: row !important;
@@ -89,6 +89,11 @@
 			color: white;
 			text-align: center;
 			width: 100%;
+		}
+		@media only screen and (max-width: 600px) {
+		  .headings {
+			font-size: 35px !important;
+		  }
 		}
 		.second-section {
 			position: relative;
