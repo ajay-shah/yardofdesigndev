@@ -34,6 +34,16 @@
 			color: #656d70 !important;
 			font-size: 25px;
 		}
+		@media only screen and (max-width: 400px) {
+		  .navbar-brand {
+				margin-right: 0.1rem !important;
+		  }
+		}
+		@media only screen and (max-width: 400px) {
+		  .navbar-toggler {
+				padding: 0rem !important;
+		  }
+		}
 		.nav-item {
 			font-family: my-font;
 		}
