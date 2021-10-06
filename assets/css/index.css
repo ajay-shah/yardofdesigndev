@@ -3,6 +3,11 @@
 			margin: 0;
 			height: 100%;
 		}
+		.container-fluid {
+			padding-left: 0rem;
+			padding-right: 0rem;
+			overflow: hidden;
+		}
 		@font-face {
 			font-family: my-font;
 			src: url("/Users/ajayshah/Downloads/futura/Futura Extra Black font.ttf");
