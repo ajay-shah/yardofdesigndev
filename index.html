@@ -31,7 +31,7 @@
 				  <a class="nav-link" aria-current="page" href="#">BLOG</a>
 				</li>
 			  </ul>
-					<a class="navbar-brand highlights border rounded-pill p-2" href="#" id="connect-with-us">CONNECT</a>
+					<a class="navbar-brand highlights border rounded-pill p-2" id="connect-with-us">CONNECT</a>
 			</div>
 		  </div>
 		</nav>
@@ -174,12 +174,12 @@
   <script type="text/javascript">
 	var elementToHide = document.getElementById('social-media-icons');
 	var elementToClick = document.getElementById('connect-with-us');
-	elementToHide.style.display="none";
+	elementToHide.style.visibility="hidden";
 	elementToClick.addEventListener("click",() => {
-		if (elementToHide.style.display == "none") {
-			elementToHide.style.display="block";
+		if (elementToHide.style.visibility == "hidden") {
+			elementToHide.style.visibility="visible";
 		} else {
-			elementToHide.style.display="none";	
+			elementToHide.style.visibility="hidden";	
 		}
 	});
   </script>

@@ -53,6 +53,9 @@
 		.nav-item {
 			font-family: my-font;
 		}
+		#connect-with-us {
+			cursor: pointer;
+		}
 		.highlights {
 			font-family: my-font;
 			background-color: #db8b02;
