@@ -138,7 +138,7 @@
 			position: absolute;
 			top: 8px;
 		}
-		@media only screen and (max-width: 540px) {
+		@media only screen and (max-width: 515px) {
 		  .fifth-section {
 			margin-top: 80px !important;
 		  }
