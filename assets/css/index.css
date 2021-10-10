@@ -64,7 +64,7 @@
 		}
 
 		.card {
-			background-color: #FFFDD0;
+			background-color:rgba(255,253,208,0.7);
 			color: rgba(101, 109, 112, 1);
 			border-radius: 20px;
 			font-family: my-font-simple;
@@ -118,12 +118,23 @@
 		}
 		.card {
 			position: absolute !important;
-			top: 20px !important;
+			top: 100px !important;
 			left: 0 auto !important;
+		}
+		@media only screen and (max-width: 380px) {
+		  .card {
+			top: 20px !important;
+		  }
+		}
+		@media only screen and (min-width: 381px) and (max-width: 750px) {
+		  .card {
+			top: 50px !important;
+		  }
 		}
 		.second-section-text {
 			position: absolute !important;
-			top: 30% !important;
+			top: 35% !important;
+			
 			width: 25%;
 			font-family: my-font;
 			color: white;
@@ -155,4 +166,28 @@
 			margin-left: auto;
 			margin-right: auto;
 		}
-		
+		.fifth-section {
+			position:relative;
+		}
+		#part-1 {
+			position: absolute;
+			top: 0;
+			margin: auto;
+			
+		}
+		#part-2 {
+			position: absolute;
+			margin-top: 0;
+		}
+		.img-max {
+			position: absolute;
+			max-width: 200px;
+			bottom: 0;
+			right: 30px !important;
+			width: 100%;
+		}
+		@media only screen and (max-width: 800px) {
+		  .img-max {
+			max-width: 80px;
+		  }
+		}
