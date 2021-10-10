@@ -10,19 +10,19 @@
 		}
 		@font-face {
 			font-family: my-font;
-			src: url("/Users/ajayshah/Downloads/futura/Futura Extra Black font.ttf");
+			src: url("./futura/Futura Extra Black font.ttf");
 		}
 		@font-face {
 			font-family: book-font;
-			src: url("/Users/ajayshah/Downloads/futura/Futura Book font.ttf");
+			src: url("./futura/Futura Book font.ttf");
 		}
 		@font-face {
 			font-family: my-font-simple;
-			src: url("/Users/ajayshah/Downloads/futura/unicode.futurab.ttf");
+			src: url("./futura/unicode.futurab.ttf");
 		}
 		@font-face {
 			font-family: light-font;
-			src: url("/Users/ajayshah/Downloads/futura/futura light bt.ttf");
+			src: url("./futura/futura light bt.ttf");
 		}
 		.bold-text {
 			font-family: my-font;
